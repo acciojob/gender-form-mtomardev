@@ -7,7 +7,9 @@ const App = () => {
   console.log(gender)
   return (
     <div>
-        <h1>Select your gender</h1>
+        
+        <form>
+        <h2>Select your gender</h2>
         <input type="radio" 
         name="gender"
         value="Male" onChange={(e) => setGender(e.target.value)} />
@@ -18,7 +20,7 @@ const App = () => {
         name="gender"
          value="Female" onChange={(e) => setGender(e.target.value)}/>
         <label>Female</label>
-        
+        </form>
         {
           gender == "Male" &&
           <div>
